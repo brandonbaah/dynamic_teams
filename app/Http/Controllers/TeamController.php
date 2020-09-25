@@ -105,6 +105,8 @@ class TeamController extends Controller
         }
         // Cut off the fat
         $sportsTeams = array_slice($sportsTeams, 0, $numOfTeams);
+
+        // Use dump statement to view result from $sportsTeams
         // dd($sportsTeams);
         
 
