@@ -93,7 +93,7 @@ class TeamController extends Controller
             $sportsTeams[$index][] = $goalies[$index];
 
             $rankings = array_column($sportsTeams[$index], 'ranking');
-            $average = array_sum($rankings) / count($rankings);
+            $average = number_format(array_sum($rankings) / count($rankings), 1);
             
             // Create Faker Object
             $faker = Faker\Factory::create();
